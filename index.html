@@ -13,6 +13,7 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,10 +30,16 @@
     <main>
         <section class="card">
             <h2>About Me</h2>
+            <div class="content-wrapper">
             <p>Hi! I'm Alex Zaugg from Twin Falls Idaho. I'm a Computer Science Major and I still have a few semesters to go. I love to go hiking, create videos, play spikeball, and read. </p>
-            <img src="images/profile.jpg" alt="Hello, my name is Alex Zaugg" width="200">
-        
-        
+            
+                <img src="images/profile.jpg" alt="Hello, my name is Alex Zaugg" width="200">
+            </div>
+            <h3>Idaho</h3>
+            <div class="content-wrapper reverse">
+                <img src="images/idaho_bridge.jpg" alt="Perrine Bridge Idaho" width="200">
+                <p>Idaho is a wonderful place with so many different things to do. You can ski, hike, camp, swim, and so much more! The Snake River Canyon and Teton Mountains are definately some highlight spots for me.</p>
+            </div>
         </section>
         <section class="card">
             <h2>Web Dev Resources</h2>
@@ -45,8 +52,8 @@
 
     </main>
     <footer>
-        <p>© <span id="currentyear"></span>Alex Zaugg - Idaho</p>
-        <p>Last Modified: </p>
+        <p>© <span id="currentyear"></span> Alex Zaugg - Idaho</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>

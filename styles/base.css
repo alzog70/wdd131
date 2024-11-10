@@ -71,7 +71,7 @@ main {
 aside {
     background-color: #fff;
     flex: 1;
-    
+
     border: 4px solid #333;
     gap: 2rem;
 }
@@ -83,6 +83,25 @@ aside {
     margin-bottom: 1rem;
     padding: 1rem;
     
+}
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.content-wrapper img {
+    order: 1;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.content-wrapper.reverse {
+    flex-direction: row-reverse;
 }
 
 footer {
