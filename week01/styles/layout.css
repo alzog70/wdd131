@@ -14,7 +14,7 @@ body {
 
 header {
     grid-area: header;
-    background-color: #333;
+    background-color: lightskyblue;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -37,6 +37,7 @@ nav a {
 main {
     display: flex;
 }
+
 
 .main-content {
     background-color: #ccc;
