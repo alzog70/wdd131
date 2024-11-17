@@ -46,18 +46,28 @@ nav ul li a {
     color: white;
 }
 
+nav ul li a:hover {
+    color: lightcyan; 
+    text-decoration: underline; 
+}
+
+
 main {
     padding: 1rem;
     max-width: 600px;
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
 }
-
-#gallery {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 1rem;
+@media (min-width: 768px) {
+    #gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+    }
 }
+/* #gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+} */
 
 figure {
     display: flex;
