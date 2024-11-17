@@ -60,7 +60,7 @@ main {
 }
 @media (min-width: 768px) {
     #gallery {
-        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 /* #gallery {
