@@ -5,12 +5,17 @@
     --font-family: 'Roboto', sans-serif;
 }
 
+main {
+	font-family: "Roboto", sans-serif;
+}
+
 body {
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
     line-height: 1.5;
     color: #333;
+	font-family: "Roboto", sans-serif;
 }
 
 
@@ -53,11 +58,24 @@ header h1 {
     width: auto;
 }
 
+.data-overlay {
+    position: absolute;
+    top: 1rem; 
+    left: 1rem; 
+    color: black;
+    background-color: rgba(224, 255, 255, 0.8); 
+    padding: 4rem;
+    border-radius: 8px;
+    text-align: left;
+    width: auto;
+}
+
 .weather h2 {
     font-size: 2rem;
     position: relative;
     display: inline-block; 
     margin-right: 1.5rem; 
+	
 }
 
 
@@ -87,6 +105,16 @@ header h1 {
     }
 
     .hero-overlay {
+        position: static; 
+        background-color: var(--secondary-color);
+        color: black;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+	.data-overlay {
         position: static; 
         background-color: var(--secondary-color);
         color: black;
