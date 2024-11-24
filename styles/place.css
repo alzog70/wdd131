@@ -53,6 +53,26 @@ header h1 {
     width: auto;
 }
 
+.weather h2 {
+    font-size: 2rem;
+    position: relative;
+    display: inline-block; /* Make sure the pseudo-element appears next to the heading */
+    margin-right: 1.5rem; /* Space between the heading and the icon */
+}
+
+/* Use the ::after pseudo-element to add the weather icon */
+.weather h2::after {
+    content: url('images/weather-icon.svg'); /* Replace with your icon path */
+    display: inline-block; /* Ensure the icon appears */
+    position: absolute;
+    top: 50%; /* Align it vertically with the text */
+    left: 100%; /* Position it to the right of the heading */
+    transform: translateY(-50%); /* Center it vertically relative to the heading */
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Adjust icon size */
+    margin-left: 10px; /* Optional: Add some space between the heading and the icon */
+}
+
 /* Mobile Layout */
 @media (max-width: 1300px) {
     .hero {
@@ -74,6 +94,10 @@ header h1 {
         margin-top: 1rem;
         border-radius: 8px;
         text-align: center;
+    }
+	.weather h2::after {
+        width: 24px; /* Smaller icon for mobile */
+        height: 24px; /* Smaller icon for mobile */
     }
 }
 footer {
