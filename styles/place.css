@@ -1,4 +1,4 @@
-/* Global Styles */
+
 :root {
     --primary-color: darkcyan;
     --secondary-color: lightcyan;
@@ -13,7 +13,7 @@ body {
     color: #333;
 }
 
-/* Header */
+
 header {
     text-align: center;
     background-color: var(--primary-color);
@@ -26,7 +26,7 @@ header h1 {
     font-size: 2.5rem;
 }
 
-/* Hero Section */
+
 .hero {
     position: relative;
     text-align: center;
@@ -40,13 +40,13 @@ header h1 {
     object-fit: cover;
 }
 
-/* Desktop Weather Overlay (Bottom-right) */
+
 .hero-overlay {
     position: absolute;
-    bottom: 1rem; /* Align overlay at the bottom of the hero image */
-    right: 1rem; /* Align overlay at the right of the hero image */
+    bottom: 1rem; 
+    right: 1rem; 
     color: black;
-    background-color: rgba(224, 255, 255, 0.8); /* Semi-transparent background */
+    background-color: rgba(224, 255, 255, 0.8); 
     padding: 4rem;
     border-radius: 8px;
     text-align: left;
@@ -56,27 +56,27 @@ header h1 {
 .weather h2 {
     font-size: 2rem;
     position: relative;
-    display: inline-block; /* Make sure the pseudo-element appears next to the heading */
-    margin-right: 1.5rem; /* Space between the heading and the icon */
+    display: inline-block; 
+    margin-right: 1.5rem; 
 }
 
-/* Use the ::after pseudo-element to add the weather icon */
+
 .weather h2::after {
-    content: url('images/weather-icon.svg'); /* Replace with your icon path */
-    display: inline-block; /* Ensure the icon appears */
+    content: url('images/weather-icon.svg'); 
+    display: inline-block; 
     position: absolute;
-    top: 50%; /* Align it vertically with the text */
-    left: 100%; /* Position it to the right of the heading */
-    transform: translateY(-50%); /* Center it vertically relative to the heading */
-    width: 30px; /* Adjust icon size */
-    height: 30px; /* Adjust icon size */
-    margin-left: 10px; /* Optional: Add some space between the heading and the icon */
+    top: 50%; 
+    left: 100%; 
+    transform: translateY(-50%); 
+    width: 30px; 
+    height: 30px;
+    margin-left: 10px; 
 }
 
-/* Mobile Layout */
+
 @media (max-width: 1300px) {
     .hero {
-        max-width: 90%; /* Add whitespace around the hero section */
+        max-width: 90%;
         margin: 0 auto;
     }
 
@@ -87,7 +87,7 @@ header h1 {
     }
 
     .hero-overlay {
-        position: static; /* Place below the hero image */
+        position: static; 
         background-color: var(--secondary-color);
         color: black;
         padding: 1rem;
@@ -96,8 +96,8 @@ header h1 {
         text-align: center;
     }
 	.weather h2::after {
-        width: 24px; /* Smaller icon for mobile */
-        height: 24px; /* Smaller icon for mobile */
+        width: 24px; 
+        height: 24px; 
     }
 }
 footer {
