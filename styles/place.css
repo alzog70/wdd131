@@ -1,0 +1,84 @@
+/* Global Styles */
+:root {
+    --primary-color: darkcyan;
+    --secondary-color: lightcyan;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Desktop Weather Overlay (Bottom-right) */
+.hero-overlay {
+    position: absolute;
+    bottom: 1rem; /* Align overlay at the bottom of the hero image */
+    right: 1rem; /* Align overlay at the right of the hero image */
+    color: black;
+    background-color: rgba(224, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 4rem;
+    border-radius: 8px;
+    text-align: left;
+    width: auto;
+}
+
+/* Mobile Layout */
+@media (max-width: 1300px) {
+    .hero {
+        max-width: 90%; /* Add whitespace around the hero section */
+        margin: 0 auto;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-overlay {
+        position: static; /* Place below the hero image */
+        background-color: var(--secondary-color);
+        color: black;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 8px;
+        text-align: center;
+    }
+}
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

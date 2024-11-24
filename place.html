@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Display">
+    <meta name="author" content="Alex Zaugg">
+    <title>Weather Display - Bolivia</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bolivia</h1>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/alpaca_desktop.webp" media="(min-width: 1300px)">
+                <img src="images/alpaca_mobile.webp" alt="Beautiful Bolivia Landscape" class="hero-image">
+            </picture>
+            <div class="hero-overlay">
+                <h2>Weather ⛅</h2>
+                <p>Temperature: <span id="temperature">8°C</span></p>
+                <p>Wind Speed: <span id="windSpeed">10 km/h</span></p>
+                <p>Wind Chill: <span id="windChill">Calculating...</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Alex Zaugg - Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
