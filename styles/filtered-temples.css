@@ -1,0 +1,118 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    background-color: darkcyan;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    display: block; 
+    cursor: pointer;
+}
+
+/* nav {
+    display: none; 
+} */
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: lightcyan; 
+    text-decoration: underline; 
+}
+
+
+main {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+@media (min-width: 768px) {
+    #gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* #gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+} */
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    background-color: darkcyan;
+    color: white;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.gallery { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 1rem; } 
+
+.gallery section { 
+    background: white; 
+    border: 1px solid rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 1rem; 
+    border-radius: 8px; 
+    text-align: center; 
+    transition: transform 0.2s, box-shadow 0.2s; } .gallery section:hover { transform: scale(1.05); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); } .gallery img { width: 100%; height: auto; border-radius: 8px; } .gallery h3 { margin-top: 0.5rem; font-size: 1.2rem; } 
+    
+.gallery p { 
+    margin: 0.5rem 0; 
+    font-size: 1rem;
+}
