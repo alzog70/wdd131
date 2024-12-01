@@ -9,33 +9,33 @@ document.addEventListener("DOMContentLoaded", () => {
     const largeLink = document.querySelector("#large");
     const smallLink = document.querySelector("#small");
 
-    // Set year and last modified date
+    
     year.textContent = new Date().getFullYear();
     lastModified.textContent = document.lastModified;
 
-    // Toggle menu visibility
+   
     hamburger.addEventListener("click", () => {
         menu.style.display = menu.style.display === "block" ? "none" : "block";
         hamburger.textContent = menu.style.display === "block" ? "✖" : "☰";
     });
 
-    // Create temple cards
-    createTempleCard(temples); // Display all temples initially
+   
+    createTempleCard(temples); 
 
     
 
-    // Event listeners for filters
+    
     homeLink.addEventListener("click", () => {
-        createTempleCard(temples); // Displays all temples
+        createTempleCard(temples); 
     });
 
    function getYearFromDate(dateString) {
-    const dateParts = dateString.split(","); // Split by comma to extract date parts
+    const dateParts = dateString.split(","); 
     if (dateParts.length > 0) {
-        const year = parseInt(dateParts[0].trim()); // Get the first part as year
+        const year = parseInt(dateParts[0].trim()); 
         return year;
     }
-    return null; // Return null if no year can be extracted
+    return null; 
 }
 
 oldLink.addEventListener("click", () => {
@@ -64,7 +64,7 @@ oldLink.addEventListener("click", () => {
 
     function createTempleCard(filteredTemples) {
         const gallery = document.querySelector(".gallery");
-        gallery.innerHTML = ""; // Clear existing content
+        gallery.innerHTML = ""; 
 
         filteredTemples.forEach((temple) => {
             let card = document.createElement("section");
