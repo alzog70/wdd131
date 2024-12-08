@@ -1,0 +1,181 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: darkcyan;
+    text-align: center;
+    color: white;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 2%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+/*----------- Form Styling --------------*/
+
+form {
+    margin: 0 auto;
+  }
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem 2%;
+}
+
+.wf1 legend {
+    color: #445ba9;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+.wf1 label {
+    display: block;
+  margin: 1rem 0 0.5rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: .9rem;
+}
+
+
+.wf1 input[type='text'],
+.wf1 input[type='tel'],
+.wf1 input[type='email'],
+.wf1 input[type='url'],
+.wf1 input[type='date'],
+.wf1 select,
+.wf1 input[type='number']
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+form textarea {
+    resize: none; /* Disables the resize handle */
+    width: 100%; /* Ensures the textarea spans the full available width */
+    min-height: 150px; /* Adjust the height as needed */
+    padding: 0.75rem;
+    border: 1px solid #999;
+    border-radius: 6px;
+    background-color: #eee;
+    color: #555;
+    font-family: inherit; /* Ensures it matches the form's font style */
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+  }
+  
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"]
+{
+    margin-right: 8px;
+  transform: scale(1.2);
+}
+
+.wf1 input[type="submit"]{
+    border: none;
+  background-image: linear-gradient(#9c2c13, #6f200e);
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.8rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px #999;
+  text-align: center;
+}
+
+.wf1 input[type="submit"]:hover {
+    background-image: linear-gradient(#6f200e, #9c2c13);
+}
+
+/* .wf1 input:required {
+    border-left: solid 6px red;
+}
+
+
+.wf1 input:required:valid {
+    border-left: solid 6px green;
+} */
+
+
+.optional {
+    color: blue; /* Makes the text blue */
+    font-size: 0.8rem; /* Adjusts to a smaller size */
+    margin-left: 8px; /* Adds spacing between the label and "optional" text */
+    font-style: italic; /* Optional: Italicize the text for subtle emphasis */
+}
+
+
+/*----------- Star Ratings --------------*/
+.rating {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+
+
+/*----------- FOOTER --------------*/
+footer {
+    text-align: center;
+    background-color: darkcyan;
+    color: white;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
