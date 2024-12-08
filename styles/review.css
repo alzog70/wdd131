@@ -93,18 +93,18 @@ form {
 }
 
 form textarea {
-    resize: none; /* Disables the resize handle */
-    width: 100%; /* Ensures the textarea spans the full available width */
-    min-height: 150px; /* Adjust the height as needed */
+    resize: none; 
+    width: 100%; 
+    min-height: 150px; 
     padding: 0.75rem;
     border: 1px solid #999;
     border-radius: 6px;
     background-color: #eee;
     color: #555;
-    font-family: inherit; /* Ensures it matches the form's font style */
+    font-family: inherit; 
     font-size: 1rem;
     line-height: 1.5;
-    box-sizing: border-box; /* Ensures padding doesn't overflow */
+    box-sizing: border-box; 
   }
   
 
@@ -145,10 +145,10 @@ form textarea {
 
 
 .optional {
-    color: blue; /* Makes the text blue */
-    font-size: 0.8rem; /* Adjusts to a smaller size */
-    margin-left: 8px; /* Adds spacing between the label and "optional" text */
-    font-style: italic; /* Optional: Italicize the text for subtle emphasis */
+    color: blue; 
+    font-size: 0.8rem; 
+    margin-left: 8px; 
+    font-style: italic; 
 }
 
 
