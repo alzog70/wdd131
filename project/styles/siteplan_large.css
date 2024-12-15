@@ -1,0 +1,48 @@
+#hamburger {
+    display: none; 
+}
+
+nav {
+    display: block; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+#gallery {
+    
+    gap: 2rem;
+}
+
+/* #gallery {
+    grid-template-columns: minmax 200px, 1fr; 
+    gap: 1.5rem;
+} */
+
+main {
+    max-width: 1200px; 
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#gallery {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 6rem; 
+}
+
+#gallery img {
+    width: auto; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+#gallery figure {
+    aspect-ratio: 2 / 3; 
+    overflow: hidden;
+    margin: 5px;
+}
